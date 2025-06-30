@@ -2,10 +2,525 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/aos.css" rel="stylesheet" />
+    <link href="css/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Izuchukwu Samson</title>
   </head>
+
   <body>
-    <h2>hello</h2>
+    <header class="header">
+      <div class="container">
+        <a href="/" class="nav-links" data-aos="fade-down" data-aos-delay="150">
+          Home
+        </a>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li
+              class="services active"
+              data-aos-delay="200"
+              data-aos="fade-down"
+            >
+              <a href="#services">Services</a>
+            </li>
+            <li class="portfolios" data-aos-delay="250" data-aos="fade-down">
+              <a href="#portfolios">Portfolios</a>
+            </li>
+            <li class="experience" data-aos-delay="300" data-aos="fade-down">
+              <a href="#experience">Experience</a>
+            </li>
+            <!-- <li class="blog" data-aos-delay="350" data-aos="fade-down">
+              <a href="#blog">Blog</a>
+            </li> -->
+
+            <li class="contact" data-aos-delay="400" data-aos="fade-down">
+              <a href="#contact">Contact</a>
+            </li>
+            <li class="mobile-link" data-aos-delay="350" data-aos="fade-down">
+              <a href="assets/IZUCHUKWU SAMSON RESUME'.pdf">Resume</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="right-content" data-aos-delay="500" data-aos="fade-down">
+          <div class="theme-color-toggle">
+            <svg class="moon" viewBox="0 0 24 24">
+              <use xlink:href="images/sprite.svg#moon-icon"></use>
+            </svg>
+            <svg class="sun" viewBox="0 0 24 24">
+              <use xlink:href="images/sprite.svg#sun-icon"></use>
+            </svg>
+          </div>
+          <a
+            href="assets/IZUCHUKWU SAMSON RESUME'.pdf"
+            target="_blank"
+            class="btn btn-outline-light download-resume"
+            >Resume</a
+          >
+          <svg class="mobile-menu-toggle" viewBox="0 0 24 24">
+            <use xlink:href="images/sprite.svg#menu"></use>
+          </svg>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="content" data-aos="fade-up">
+            <p class="above-title mb-16">My name is</p>
+            <h1 class="full-name">
+              Izuchukwu <span class="primary">Samson.</span>
+            </h1>
+            <p class="about" align="justify">I am a Data Scientist</p>
+            <a
+              href="assets/IZUCHUKWU SAMSON RESUME'.pdf"
+              target="_blank"
+              class="btn btn-outline-light download-resume-mobile"
+              >Download Resume</a
+            >
+            <ul class="social-icons">
+              <li>
+                <a target="_blank" href="https://github.com/Izusam">
+                  <svg viewBox="0 0 24 24">
+                    <use xlink:href="images/sprite.svg#github-icon"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/izuchukwu-samson-21bb60144/"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <use xlink:href="images/sprite.svg#linkedin-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="image" data-aos="fade-up">
+            <img class="avatar" src="images/izuizu.png" alt="MO" />
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-section about" id="about">
+        <div class="container">
+          <div class="content" data-aos="fade-up">
+            <p class="above-title mb-16">Who Am I?</p>
+
+            <p class="about" align="justify">I am a Data Scientist</p>
+            <a
+              href="assets/IZUCHUKWU SAMSON RESUME'.pdf"
+              target="_blank"
+              class="btn btn-outline-light download-resume-mobile"
+              >Download Resume</a
+            >
+          </div>
+
+          <div class="content" data-aos="fade-up">
+            <p class="above-title mb-16">What I'm Doing Now</p>
+
+            <p class="about" align="justify">I am a Data Scientist</p>
+            <a
+              href="assets/IZUCHUKWU SAMSON RESUME'.pdf"
+              target="_blank"
+              class="btn btn-outline-light download-resume-mobile"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="service-section" id="services">
+        <div class="container">
+          <div class="section-name center" data-aos="fade-up">
+            <div class="content">
+              <p class="above-title">Services</p>
+              <h4 class="title">Specialized in</h4>
+            </div>
+          </div>
+          <div class="service-item-wrapper">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 30 30"
+                  id="Layer_1"
+                  version="1.1"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill: #fd6a7e;
+                    }
+
+                    .st1 {
+                      fill: #17b978;
+                    }
+
+                    .st2 {
+                      fill: #8797ee;
+                    }
+
+                    .st3 {
+                      fill: #41a6f9;
+                    }
+
+                    .st4 {
+                      fill: #37e0ff;
+                    }
+
+                    .st5 {
+                      fill: #2fd9b9;
+                    }
+
+                    .st6 {
+                      fill: #f498bd;
+                    }
+
+                    .st7 {
+                      fill: #ffdf1d;
+                    }
+
+                    .st8 {
+                      fill: #c6c9cc;
+                    }
+                  </style>
+                  <path
+                    class="st2"
+                    d="M26.6,12.9l-2.9-0.3c-0.2-0.7-0.5-1.4-0.8-2l1.8-2.3c0.2-0.2,0.1-0.5,0-0.7l-2.2-2.2c-0.2-0.2-0.5-0.2-0.7,0  l-2.3,1.8c-0.6-0.4-1.3-0.6-2-0.8l-0.3-2.9C17,3.2,16.8,3,16.6,3h-3.1c-0.3,0-0.5,0.2-0.5,0.4l-0.3,2.9c-0.7,0.2-1.4,0.5-2,0.8  L8.3,5.4c-0.2-0.2-0.5-0.1-0.7,0L5.4,7.6c-0.2,0.2-0.2,0.5,0,0.7l1.8,2.3c-0.4,0.6-0.6,1.3-0.8,2l-2.9,0.3C3.2,13,3,13.2,3,13.4v3.1  c0,0.3,0.2,0.5,0.4,0.5l2.9,0.3c0.2,0.7,0.5,1.4,0.8,2l-1.8,2.3c-0.2,0.2-0.1,0.5,0,0.7l2.2,2.2c0.2,0.2,0.5,0.2,0.7,0l2.3-1.8  c0.6,0.4,1.3,0.6,2,0.8l0.3,2.9c0,0.3,0.2,0.4,0.5,0.4h3.1c0.3,0,0.5-0.2,0.5-0.4l0.3-2.9c0.7-0.2,1.4-0.5,2-0.8l2.3,1.8  c0.2,0.2,0.5,0.1,0.7,0l2.2-2.2c0.2-0.2,0.2-0.5,0-0.7l-1.8-2.3c0.4-0.6,0.6-1.3,0.8-2l2.9-0.3c0.3,0,0.4-0.2,0.4-0.5v-3.1  C27,13.2,26.8,13,26.6,12.9z M15,19c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4s4,1.8,4,4C19,17.2,17.2,19,15,19z"
+                  ></path>
+                </svg>
+              </div>
+              <h4 class="title">Data Cleaning and Integration</h4>
+              <p class="body">
+                Detecting and correcting errors, inconsistencies, duplicates,
+                and missing values in data, with combining data from different
+                sources, and ensuring consistency.
+              </p>
+            </div>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="250">
+              <div class="icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M117 608.4v178.5c1.5 93.7 155.7 169.5 395 169.5s393.4-75.8 395-169.5V608.4H117z"
+                    fill="#1B9BDB"
+                  ></path>
+                  <path
+                    d="M907 607.7c0 99.4-154.8 180-395 180s-395-80.6-395-180 154.8-180 395-180 395 80.5 395 180z"
+                    fill="#FFFFFF"
+                  ></path>
+                  <path
+                    d="M117 428.4v158.5c1.5 93.7 155.7 179.5 395 179.5s393.4-85.8 395-179.5V428.4H117z"
+                    fill="#1B9BDB"
+                  ></path>
+                  <path
+                    d="M907 427.7c0 99.4-154.8 180-395 180s-395-80.6-395-180 154.8-180 395-180 395 80.5 395 180z"
+                    fill="#FFFFFF"
+                  ></path>
+                  <path
+                    d="M117 248.4v158.5c1.5 93.7 155.7 179.5 395 179.5s393.4-85.8 395-179.5V248.4H117z"
+                    fill="#1B9BDB"
+                  ></path>
+                  <path
+                    d="M907 247.7c0 99.4-154.8 180-395 180s-395-80.6-395-180 154.8-180 395-180 395 80.5 395 180z"
+                    fill="#3ED6FF"
+                  ></path>
+                </svg>
+              </div>
+              <h4 class="title">Data Transformation and Modeling</h4>
+              <p class="body">
+                Converting raw data into a usable, analysis-ready format. such
+                as data type conversions, normalization, aggregation, and
+                developing data models, for example, conceptual, logical, and
+                physical data models to structure data for analysis.
+              </p>
+            </div>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M405.333333 469.333333h213.333334v426.666667H405.333333zM128 256h213.333333v640H128zM682.666667 128h213.333333v768H682.666667z"
+                    fill="#00BCD4"
+                  ></path>
+                </svg>
+              </div>
+              <h4 class="title">Data Visualization and Reporting</h4>
+              <p class="body">
+                Creating interactive visual representations such as charts,
+                graphs, and dashboards to communicate insights and findings in
+                tables, graphs, dashboards, and slide decks to share with
+                stakeholders.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section" id="portfolios">
+        <div class="container">
+          <!-- Section Heading -->
+          <div class="section-name" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <p class="above-title">My works</p>
+              <h4 class="title">Featured Portfolios</h4>
+            </div>
+          </div>
+
+          <!-- Portfolio Carousel -->
+          <div class="portfolio-item-wrapper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Portfolio 1 -->
+                <div
+                  class="swiper-slide"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <article class="portfolio-item">
+                    <figure>
+                      <a target="_blank" href="#">
+                        <img
+                          src="images/superstore.png"
+                          alt="Tech Giants Dashboard"
+                        />
+                      </a>
+                    </figure>
+                    <div class="detail">
+                      <h4 class="title">Sample Super Store</h4>
+                      <div class="bottom">
+                        <span class="tag">Tableau</span>
+                        <a
+                          class="link"
+                          target="_blank"
+                          href="https://public.tableau.com/app/profile/izuchukwu.samson/viz/SampleSuperStore_17508603283420/Dashboard2"
+                        >
+                          <svg viewBox="0 0 24 24">
+                            <use xlink:href="images/sprite.svg#link"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <!-- swiper-wrapper -->
+            </div>
+            <!-- swiper -->
+          </div>
+          <!-- portfolio-item-wrapper -->
+        </div>
+        <!-- container -->
+      </section>
+
+      <section class="experience-section" id="experience">
+        <div class="container">
+          <div class="side">
+            <div class="section-name" data-aos="fade-up">
+              <p class="above-title">Career path</p>
+              <h4 class="title">Work Experience</h4>
+            </div>
+            <div class="companies-list">
+              <div class="selector">
+                <svg viewBox="0 0 24 24">
+                  <use xlink:href="images/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+              <ul>
+                <li data-tab="swiftIn" class="active" data-aos="fade-up">
+                  GOMYCODE
+                </li>
+                <!-- <li data-tab="rodan" data-aos="fade-up">Rodan</li> -->
+                <!-- <li data-tab="freestuff" data-aos="fade-up">
+                  Free Stuff Finder
+                </li> -->
+                <!-- <li data-tab="Ithought" data-aos-delay="50" data-aos="fade-up">
+                  Ithought
+                </li> -->
+                <!-- <li data-tab="eqhall" data-aos-delay="100" data-aos="fade-up">
+                  Equipment Hall
+                </li> -->
+                <!-- <li data-tab="ihp" data-aos-delay="150" data-aos="fade-up">
+                  IHP Consulting Services
+                </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="content active" id="swiftIn">
+            <div class="headline" data-aos-delay="50" data-aos="fade-up">
+              <h4 class="job-title">
+                Student <span class="company-name"></span>
+              </h4>
+              <p class="location">Festac, Lagos</p>
+              <p class="period">Feb 2025 - Present</p>
+              <!-- <ul class="stack-list">
+                <li class="tag">Swift</li>
+                <li class="tag">Go</li>
+              </ul> -->
+            </div>
+            <div class="line"></div>
+            <ul class="responsibilities">
+              <li data-aos-delay="50" data-aos="fade-up">
+                learnt data science
+              </li>
+              <!-- <li data-aos-delay="100" data-aos="fade-up">
+                Collaborate with stakeholders to develop business KPI Dashboards
+                in Tableau, enhancing business decisions and tracking customer
+                base growth.
+              </li> -->
+              <!-- <li data-aos-delay="150" data-aos="fade-up">
+                Work with clients to design and develop Tableau dashboards in
+                different industries while incorporating datasets from multiple
+                sources.
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="education-skill-section" id="education-skill">
+        <div class="container">
+          <div class="section-name" data-aos="fade-up">
+            <p class="above-title">Learning Path</p>
+            <h4 class="title">Education & Skills</h4>
+          </div>
+          <div class="education-skill-wrapper">
+            <div class="education">
+              <div
+                class="education-item"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <h4 class="school">Federal University of Technology, Owerri</h4>
+                <p class="degree-field">
+                  Bachelor's degree - Soil & Water Engineering
+                </p>
+                <p class="date">2018 -2022</p>
+              </div>
+              <div
+                class="education-item"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
+                <h4 class="school">GOMYCODE</h4>
+                <p class="degree-field">
+                  Data Science Program - Tools: SQL, Python, Matplotlib, Data
+                  Visualization
+                </p>
+                <p class="date">2022</p>
+              </div>
+            </div>
+            <div class="skill">
+              <p class="description" data-aos="fade-up" data-aos-delay="50">
+                While I search for the proper company fit, I am working on a
+                personal ongoing project where I tell stories with data and
+                build pseudo business dashboards across various industries. I
+                release data storytelling projects every week and business
+                dashboards every month on my Tableau public and LinkedIn.
+              </p>
+              <div
+                class="progress-bar-wrapper"
+                data-aos="fade-up"
+                data-aos-delay="50"
+              >
+                <div class="progress-bar">
+                  <p class="label">Data Viz (Tableau)</p>
+                </div>
+                <div class="progress-bar">
+                  <p class="label">Python</p>
+                </div>
+
+                <div class="progress-bar">
+                  <p class="label">SQL</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="social-icons" data-aos="fade-up" data-aos-delay="50">
+        <li>
+          <a target="_blank" href="https://github.com/Izusam">
+            <svg viewBox="0 0 24 24">
+              <use xlink:href="images/sprite.svg#github-icon"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/izuchukwu-samson-21bb60144/"
+          >
+            <svg viewBox="0 0 24 24">
+              <use xlink:href="images/sprite.svg#linkedin-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright" data-aos="fade-up" data-aos-delay="100">
+        © <span class="year">2024</span> - Izuchukwu<span class="bold">
+          Samson</span
+        >
+      </p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const yearSpan = document.querySelector(".copyright .year");
+        if (yearSpan) {
+          yearSpan.textContent = new Date().getFullYear();
+        }
+      });
+    </script>
+
+    <!-- Replace the local library files with these CDN links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
