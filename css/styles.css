@@ -1278,6 +1278,19 @@ input[type="email"]::placeholder,
   }
 }
 @media only screen and (max-width: 1150px) {
+  .experience-section .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .experience-section .side {
+    width: 95%;
+  }
+
+  .experience-section .content {
+    width: 95%;
+  }
   /* SERVICES */
   .service-section .service-item-wrapper {
     flex-wrap: wrap;
