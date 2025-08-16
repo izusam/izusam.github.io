@@ -1590,6 +1590,13 @@ input[type="email"]::placeholder,
     .testimonial-item:first-of-type {
     margin-right: 0;
   }
+
+  .experience-section .side,
+  .experience-section .content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 16px; /* optional */
+  }
   /* EDUCATION AND SKILL */
   .education-skill-section .education-skill-wrapper {
     flex-wrap: wrap;
@@ -1616,12 +1623,16 @@ input[type="email"]::placeholder,
   .container {
     padding: 0 24px;
   }
+  body {
+    overflow-x: hidden; /* prevent horizontal scroll */
+  }
   .above-title {
     margin-bottom: 8px;
   }
   .section-name .title {
     font-size: 30px;
   }
+
   /* HEADER */
   .header {
     margin-top: 0;
@@ -1631,6 +1642,7 @@ input[type="email"]::placeholder,
     right: 0;
     line-height: 40px;
   }
+
   /* HERO */
   .hero-section .content .full-name {
     font-size: 36px;
@@ -1645,6 +1657,7 @@ input[type="email"]::placeholder,
   .hero-section .content .social-icons {
     margin-left: 2px;
   }
+
   /* SERVICES */
   .service-section {
     margin: 96px 0 0;
@@ -1652,6 +1665,7 @@ input[type="email"]::placeholder,
   .service-section .service-item-wrapper {
     padding: 80px 0 0;
   }
+
   /* PORTFOLIO */
   .portfolio-section .section-name {
     flex-wrap: wrap;
@@ -1662,11 +1676,22 @@ input[type="email"]::placeholder,
   .portfolio-section .slider-navigation .prev {
     margin-right: 8px;
   }
+
+  /* EXPERIENCE (fix scroll + stack) */
+  .experience-section .side,
+  .experience-section .content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 16px; /* keep text aligned */
+    margin: 0; /* reset any offsets */
+  }
+
   /* CONTACT */
   .contact-section .contact-wrapper .contact-info .contact-info-item {
     margin-bottom: 32px;
   }
 }
+
 @media only screen and (max-width: 480px) {
   /* HERO */
   .hero-section .container {
