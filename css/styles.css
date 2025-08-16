@@ -199,15 +199,6 @@ h6 {
 [data-theme="dark"] h5,
 [data-theme="dark"] h6 {
   color: var(--white);
-
-  html,
-  body {
-    overflow-x: hidden;
-  }
-
-  .container {
-    overflow-x: hidden;
-  }
 }
 .container {
   width: 100%;
@@ -1671,12 +1662,6 @@ input[type="email"]::placeholder,
   .portfolio-section .slider-navigation .prev {
     margin-right: 8px;
   }
-  /* PROBLEM: Navigation elements might overflow */
-  .portfolio-section .slider-navigation {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
-  }
   /* CONTACT */
   .contact-section .contact-wrapper .contact-info .contact-info-item {
     margin-bottom: 32px;
@@ -1695,91 +1680,4 @@ input[type="email"]::placeholder,
 
 section.hero-section.about {
   background-color: var(--light);
-}
-/* MOBILE STABILITY FIXES */
-@media only screen and (max-width: 576px) {
-  /* Prevent horizontal scrolling */
-  html,
-  body {
-    overflow-x: hidden;
-    width: 100%;
-  }
-
-  /* Ensure container doesn't exceed viewport */
-  .container {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 16px;
-    overflow-x: hidden;
-  }
-
-  /* Fix hero section layout */
-  .hero-section .container {
-    padding: 0 24px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-section .image {
-    left: 0;
-    position: relative;
-    margin: 32px auto 0;
-    max-width: 280px;
-  }
-
-  /* Fix service items */
-  .service-section .service-item {
-    min-width: unset;
-    width: 100%;
-    margin: 0 0 24px 0;
-    padding: 32px 24px;
-  }
-
-  /* Fix testimonial items */
-  .testimonial-section .testimonial-item {
-    min-width: unset;
-    width: 100%;
-    margin: 0 0 48px 0;
-    padding: 60px 24px 25px;
-  }
-
-  /* Fix experience section */
-  .experience-section .side .companies-list .selector {
-    width: 100%;
-  }
-
-  /* Ensure text doesn't overflow */
-  * {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-
-  /* Fix any remaining flex items */
-  .service-section .service-item-wrapper,
-  .testimonial-section .testimonial-item-wrapper,
-  .blog-section .post-item-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-  }
-}
-
-/* Extra small devices */
-@media only screen and (max-width: 360px) {
-  .container {
-    padding: 0 12px;
-  }
-
-  .hero-section .container {
-    padding: 0 16px;
-  }
-
-  .hero-section .image {
-    max-width: 250px;
-    height: 300px;
-  }
-
-  .hero-section .image .cover,
-  .hero-section .image .avatar {
-    max-width: 250px;
-  }
 }
